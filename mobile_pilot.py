@@ -115,7 +115,7 @@ mobile_html = f"""
                         <div class="app-name">아바타 챗봇</div>
                     </a>
 
-                    <a href="여기에_듀얼소울_링크를_넣으세요" target="_blank" class="app-item">
+                    <a href="https://dualsoul.streamlit.app/" target="_blank" class="app-item">
                         <img src="{check_icon('dual', 'Tarot')}" class="app-img">
                         <div class="app-name">Dual Soul</div>
                     </a>
