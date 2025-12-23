@@ -153,7 +153,7 @@ mobile_html = f"""
                         <div class="app-name">CHOBY(SNS)</div>
                     </a>
 
-                    <a href="여기에_소리글_링크를_넣으세요" target="_blank" class="app-item">
+                    <a href="https://llm-1stproject-rzz5dv7tojel4tjhercgep.streamlit.app/ " target="_blank" class="app-item">
                         <img src="{check_icon('sorigeul', 'Record')}" class="app-img">
                         <div class="app-name">소리글</div>
                     </a>
