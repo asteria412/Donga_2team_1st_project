@@ -92,12 +92,12 @@ mobile_html = f"""
                     
                     <a href="여기에_유튜브생성_링크를_넣으세요" target="_blank" class="app-item">
                         <img src="{check_icon('shorts', 'Shorts')}" class="app-img">
-                        <div class="app-name">유튜브 생성</div>
+                        <div class="app-name">Shorts Maker</div>
                     </a>
 
                     <a href="https://donga2teamproject1-choby.streamlit.app/" target="_blank" class="app-item">
                         <img src="{check_icon('choby', 'Choby')}" class="app-img">
-                        <div class="app-name">CHOBY</div>
+                        <div class="app-name">CHOBY(SNS)</div>
                     </a>
 
                     <a href="여기에_소리글_링크를_넣으세요" target="_blank" class="app-item">
@@ -117,7 +117,7 @@ mobile_html = f"""
 
                     <a href="여기에_듀얼소울_링크를_넣으세요" target="_blank" class="app-item">
                         <img src="{check_icon('dual', 'Tarot')}" class="app-img">
-                        <div class="app-name">Dual_Soul</div>
+                        <div class="app-name">Dual Soul</div>
                     </a>
 
                 </div>
