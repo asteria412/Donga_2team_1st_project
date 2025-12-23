@@ -143,7 +143,7 @@ mobile_html = f"""
                 <div class="app-grid">
                     <div class="folder-title">My favorite</div>
                     
-                    <a href="여기에_유튜브생성_링크를_넣으세요" target="_blank" class="app-item">
+                    <a href="https://llm-proj-202512-88cccgb64yuvuu97z3ugwu.streamlit.app/" target="_blank" class="app-item">
                         <img src="{check_icon('shorts', 'Shorts')}" class="app-img">
                         <div class="app-name">Shorts Maker</div>
                     </a>
