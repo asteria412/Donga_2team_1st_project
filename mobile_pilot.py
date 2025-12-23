@@ -163,7 +163,7 @@ mobile_html = f"""
                         <div class="app-name">voca海</div>
                     </a>
 
-                    <a href="여기에_아바타_링크를_넣으세요" target="_blank" class="app-item">
+                    <a href="https://avamigo.streamlit.app/" target="_blank" class="app-item">
                         <img src="{check_icon('avatar', 'Avatar')}" class="app-img">
                         <div class="app-name">아바타 챗봇</div>
                     </a>
