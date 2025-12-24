@@ -76,13 +76,13 @@ mobile_html = f"""
         width: 360px; height: 720px; background-color: #111; border-radius: 50px; 
         padding: 15px; position: relative; box-sizing: border-box;
         
-        /* ▼▼▼ [수정됨] 평상시에는 빛이 없고 기본 그림자만 있음 ▼▼▼ */
+        /* 평상시에는 빛이 없고 기본 그림자만 있음 */
         box-shadow: 0 30px 60px rgba(0,0,0,0.5);
         /* 빛이 확 퍼지는 느낌을 위해 ease-out 사용 */
         transition: box-shadow 0.4s ease-out;
     }}
     
-    /* ▼▼▼ [수정됨] 마우스를 올리면 숨겨둔 프리즘 빛이 폭발하듯 퍼져나감 ▼▼▼ */
+    /* 마우스를 올리면 숨겨둔 프리즘 빛이 폭발하듯 퍼져나감 */
     .phone-frame:hover {{
          box-shadow: 
             0 40px 80px rgba(0,0,0,0.6), /* 기본 그림자 진하게 */
@@ -112,22 +112,21 @@ mobile_html = f"""
     }}
     #folder-toggle:checked ~ .folder .mini-icon, #folder-toggle:checked ~ .folder-label {{ display: none; }}
 
-    /* ▼▼▼ 여기 숫자를 고치면 위치가 변해요! ▼▼▼ */
     .app-grid {{
         display: none; width: 100%; height: 100%; flex-wrap: wrap;
         align-content: flex-start; gap: 10px;
-        padding-left: 12px; /* 아까 24px -> 12px로 줄였습니다 (더 왼쪽으로 옴) */
+        padding-left: 12px;
     }}
     #folder-toggle:checked ~ .folder .app-grid {{ display: flex; }}
     
     .folder-title {{ 
         width: 100%; font-size: 20px; font-weight: bold; 
         margin-bottom: 20px; text-align: center; color: #333; 
-        margin-left: -12px; /* 제목 중앙 정렬을 위해 padding만큼 반대로 당김 */
+        margin-left: -12px;
     }}
     
     .app-item {{ display: flex; flex-direction: column; align-items: center; width: 80px; margin-bottom: 10px; text-decoration: none; transition: transform 0.2s; }}
-    .app-item:hover {{ transform: scale(1.1); }} /* 마우스 호버 시 아이콘 확대 효과 추가 */
+    .app-item:hover {{ transform: scale(1.1); }}
     .app-img {{ width: 60px; height: 60px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; }}
     .app-name {{ margin-top: 6px; font-size: 11px; color: #333; font-weight: 600; text-align: center; }}
 </style>
@@ -143,6 +142,11 @@ mobile_html = f"""
                 <div class="app-grid">
                     <div class="folder-title">My favorite</div>
                     
+                    <a href="https://llm-1stproject-rzz5dv7tojel4tjhercgep.streamlit.app/ " target="_blank" class="app-item">
+                        <img src="{check_icon('sorigeul', 'Record')}" class="app-img">
+                        <div class="app-name">소리글</div>
+                    </a>
+
                     <a href="https://llm-proj-202512-88cccgb64yuvuu97z3ugwu.streamlit.app/" target="_blank" class="app-item">
                         <img src="{check_icon('shorts', 'Shorts')}" class="app-img">
                         <div class="app-name">Shorts Maker</div>
@@ -151,11 +155,6 @@ mobile_html = f"""
                     <a href="https://donga2teamproject1-choby.streamlit.app/" target="_blank" class="app-item">
                         <img src="{check_icon('choby', 'Choby')}" class="app-img">
                         <div class="app-name">CHOBY(SNS)</div>
-                    </a>
-
-                    <a href="https://llm-1stproject-rzz5dv7tojel4tjhercgep.streamlit.app/ " target="_blank" class="app-item">
-                        <img src="{check_icon('sorigeul', 'Record')}" class="app-img">
-                        <div class="app-name">소리글</div>
                     </a>
 
                     <a href="https://cnvocahigh.streamlit.app" target="_blank" class="app-item">
@@ -182,5 +181,5 @@ mobile_html = f"""
 </html>
 """
 
-# 타이틀 공간 확보를 위해 높이를 조금 늘렸습니다
+# 타이틀 공간 확보를 위해 높이를 조금 늘임
 components.html(mobile_html, height=850)
